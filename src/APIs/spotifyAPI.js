@@ -19,7 +19,6 @@ const fetchPlaylistSongs = async () => {
         });
 
         const songsData = response.data.items.map(item => {
-            // Obtener la imagen más grande de la pista
             const imageUrl = item.track.album.images.reduce((prevImage, currentImage) => {
                 if (prevImage.height < currentImage.height) {
                     return currentImage;
@@ -27,24 +26,21 @@ const fetchPlaylistSongs = async () => {
                 return prevImage;
             }, { height: 0 }).url;
 
-            // Obtener el enlace de la canción
             const songLink = item.track.external_urls.spotify;
 
             return {
                 name: item.track.name,
                 artist: item.track.artists.map(artist => artist.name).join(', '),
                 imageUrl: imageUrl,
-                songLink: songLink // Agregar el enlace a la canción
+                songLink: songLink 
             };
         });
 
         return songsData;
     } catch (error) {
-        // Si hay un error de autorización, intenta renovar el token de acceso y vuelve a realizar la solicitud
         if (error.response.status === 401) {
             try {
                 accessToken = await renewAccessToken();
-                // Vuelve a realizar la solicitud con el nuevo token de acceso
                 return fetchPlaylistSongs();
             } catch (renewError) {
                 throw renewError;

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import fetchPlaylistSongs from '../APIs/spotifyAPI';
-
+import { FaSpotify } from "react-icons/fa";
 const SpotifyPlaylist = () => {
     const [songs, setSongs] = useState([]);
     const [error, setError] = useState(null);
@@ -19,12 +19,12 @@ const SpotifyPlaylist = () => {
     }, []);
 
     return (
-        <div className="container text-white">
-            <h1 className="text-2xl font-bold bg-zinc-800 p-2 border-2 border-zinc-800 border-b-zinc-600">My coding playlist 🤪</h1>
+        <div className="container text-white rounded-lg">
+            <h1 className="text-neutral-900 flex items-center justify-center gap-2 text-2xl font-bold p-2 border-2 border-zinc-800 border-b-zinc-600 rounded-t-lg bg-gradient-to-r from-green-400 to-green-600"><FaSpotify /> Mi playlist en spotify</h1>
             {error ? (
                 <div className="text-red-500">{error}</div>
             ) : (
-                <ul className='bg-neutral-800 grid p-2 overflow-y-auto' style={{ maxHeight: '250px' }}>
+                <ul className='bg-neutral-800 grid p-2 overflow-y-auto rounded-b-lg' style={{ maxHeight: '220px' }}>
                     {songs.map((song, index) => (
                         <li key={index} className="text-lg flex items-center p-2 border-b border-zinc-700 hover:bg-neutral-700">
                             <span className="font-semibold mr-2">{index + 1}.</span>

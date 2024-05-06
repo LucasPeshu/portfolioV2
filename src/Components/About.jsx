@@ -1,11 +1,12 @@
 import Container from './Container';
 import Utn from './Utn';
-import Lenguaje from './Lenguaje';
 import GoogleMaps from './GoogleMaps';
 import AboutMe from './AboutMe';
-import Birthday from './Birthday';
 import SpotifyPlaylist from './SpotifyPlaylist'
 import GithubLogoComponent from './GithubLogoComponent ';
+import Projects from './Projects';
+import Tech from './Tech';
+import Profile from './Profile';
 
 const About = () => {
   return (
@@ -14,11 +15,12 @@ const About = () => {
         <div className=''>
           <AboutMe />
           <div className="grid grid-cols-1 gap-8 pt-8 lg:grid-cols-3">
-            <Utn />
-            <Lenguaje />
+            <Profile />
             <GoogleMaps />
+            <Tech />
             <SpotifyPlaylist />
             <GithubLogoComponent />
+            <Projects />
           </div>
         </div>
       </Container>
