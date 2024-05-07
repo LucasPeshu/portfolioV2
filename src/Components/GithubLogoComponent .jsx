@@ -1,4 +1,3 @@
-import React from 'react';
 import { SiGithub } from 'react-icons/si';
 
 const GithubLogoComponent = () => {

@@ -1,5 +1,5 @@
 import { IoPersonSharp } from "react-icons/io5";
-import { FaExternalLinkAlt, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 import { useState } from 'react';
 
 const Profile = () => {
@@ -20,17 +20,29 @@ const Profile = () => {
       
       {isPopupOpen && (
         <div className="fixed inset-0 bg-gray-900 bg-opacity-90 flex justify-center items-center z-50">
-          <div className="bg-white p-4 rounded-lg relative">
-            <div className="flex justify-between items-center gap-24">
-              <div className="text-xl font-bold">Mis Proyectos</div>
-              <div>
-                <FaTimes className="cursor-pointer" onClick={togglePopup} />
-              </div>
+          <div className="bg-neutral-800 text-white p-4 rounded-lg relative flex flex-col gap-2">
+            <div>
+              <div className="font-semibold">Nombre:</div>
+              <div>Lucas Pereira Da Silva</div>
             </div>
-            <hr className="my-2" />
-            <div className="flex gap-2">
-              <a href="https://noticierovm.fly.dev/" className="flex gap-2 text-sky-600 hover:text-sky-800">NoticieroVM<FaExternalLinkAlt /></a>
-              <div>Proyecto realizado con Django poniendo en práctica mis habilidades para el desarrollo back-end. Sistema de busqueda y gestión de publicaciones.</div>
+            <div>
+              <div className="font-semibold">Estudiando:</div>
+              <div>Ing. en sistemas, UTN FRVM</div>
+            </div>
+            <div>
+              <div className="font-semibold">Edad:</div>
+              <div>22 años</div>
+            </div>
+            <div>
+              <div className="font-semibold">Ubicación:</div>
+              <div>Villa María, Córdoba, Argentina</div>
+            </div>
+            <div>
+              <div className="font-semibold">Intereses:</div>
+              <div>Desarrollo web, programación, tecnología, música, deportes.</div>
+            </div>
+            <div className="absolute top-0 right-0 p-2">
+              <FaTimes className="cursor-pointer" onClick={togglePopup} />
             </div>
           </div>
         </div>

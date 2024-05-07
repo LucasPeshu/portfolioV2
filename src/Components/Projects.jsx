@@ -22,7 +22,7 @@ const Projects = () => {
       
       {isPopupOpen && (
         <div className="fixed inset-0 bg-gray-900 bg-opacity-90 flex justify-center items-center">
-          <div className="bg-white p-4 rounded-lg relative m-96">
+          <div className="bg-neutral-800 p-4 rounded-lg relative m-96 text-white">
             <div className="flex justify-between items-center gap-24">
               <div className="text-xl font-bold">Mis Proyectos</div>
               <div>

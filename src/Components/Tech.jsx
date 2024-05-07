@@ -22,7 +22,7 @@ const Tech = () => {
       
       {isPopupOpen && (
         <div className="fixed inset-0 bg-gray-900 bg-opacity-90 flex justify-center items-center z-50">
-          <div className="bg-white p-4 rounded-lg relative">
+          <div className="text-white p-4 rounded-lg relative bg-neutral-800">
             <div className="flex justify-between items-center gap-24">
               <div className="text-xl font-bold">Tecnologías</div>
               <div>
@@ -30,7 +30,7 @@ const Tech = () => {
               </div>
             </div>
             <hr className="my-2" />
-            <ul className="p-2 overflow-y-auto rounded-b-lg" style={{ maxHeight: '220px' }}>
+            <ul className=" overflow-y-auto rounded-b-lg text-white" style={{ maxHeight: '220px' }}>
               <li className="text-xl flex gap-2 items-center p-2 border-b border-zinc-700"><FaPython />Python</li>
               <li className="text-xl flex gap-2 items-center p-2 border-b border-zinc-700"><FaHtml5 />HTML</li>
               <li className="text-xl flex gap-2 items-center p-2 border-b border-zinc-700"><FaCss3 />CSS</li>
@@ -46,9 +46,7 @@ const Tech = () => {
               <li className="text-xl flex gap-2 items-center p-2 border-b border-zinc-700"><SiGithub />GitHub</li>
               <li className="text-xl flex gap-2 items-center p-2 border-b border-zinc-700"><FaDocker />Docker</li>
               <li className="text-xl flex gap-2 items-center p-2 border-b border-zinc-700"><FaWordpress   /> WordPress</li>
-              <li className="text-xl flex gap-2 items-center p-2">
-                <FaFigma  /> Figma
-              </li>
+              <li className="text-xl flex gap-2 items-center p-2"><FaFigma  /> Figma</li>
             </ul>
           </div>
         </div>
