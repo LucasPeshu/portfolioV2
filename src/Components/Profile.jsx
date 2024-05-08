@@ -19,8 +19,10 @@ const Profile = () => {
       </div>
       
       {isPopupOpen && (
-        <div className="fixed inset-0 bg-gray-900 bg-opacity-90 flex justify-center items-center z-50">
+        <div className="p-2 fixed inset-0 bg-gray-900 bg-opacity-90 flex justify-center items-center z-50">
           <div className="bg-neutral-800 text-white p-4 rounded-lg relative flex flex-col gap-2">
+          <div className="text-xl font-bold">¿Quién soy?</div>
+          <hr />
             <div>
               <div className="font-semibold">Nombre:</div>
               <div>Lucas Pereira Da Silva</div>

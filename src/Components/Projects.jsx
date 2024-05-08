@@ -22,16 +22,16 @@ const Projects = () => {
       
       {isPopupOpen && (
         <div className="fixed inset-0 bg-gray-900 bg-opacity-90 flex justify-center items-center">
-          <div className="bg-neutral-800 p-4 rounded-lg relative m-96 text-white">
+          <div className="bg-neutral-800 p-4 rounded-lg relative m-4 lg:m-64 text-white">
             <div className="flex justify-between items-center gap-24">
               <div className="text-xl font-bold">Mis Proyectos</div>
               <div>
                 <FaTimes className="cursor-pointer" onClick={togglePopup} />
               </div>
             </div>
-            <hr className="my-2" />
-            <div className="flex gap-3">
-              <img src={ noticierovm } alt="" className="w-64 rounded-lg shadow-md pb-2" />
+            <hr className="my-3" />
+            <div className="flex flex-col sm:flex-row gap-3 items-center">
+              <img src={ noticierovm } alt="" className="w-96 rounded-lg shadow-md" />
               <div>
               <div>Proyecto realizado con Django poniendo en práctica mis habilidades para el desarrollo back-end. Sistema de busqueda y gestión de publicaciones.</div>
                 <a href="https://noticierovm.fly.dev/" className="flex gap-2 text-sky-600 hover:text-sky-800">NoticieroVM<FaExternalLinkAlt /></a>

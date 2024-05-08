@@ -18,8 +18,8 @@ function Inicio() {
       <div className="absolute top-0 left-0 w-full h-full bg-neutral-800 opacity-90 z-10"></div>
 
       <Container>
-        <div className="text-white flex flex-col items-center justify-center py-28 gap-3 relative z-20">
-          <div className="text-5xl text-sky-400 font-bold">¡Bienvenido a mi web, visitante! 🚀🌎 </div>
+        <div className="text-white text-center flex flex-col items-center justify-center py-28 gap-3 relative z-20">
+          <div className="text-3xl text-sky-400 font-bold sm:text-4xl lg:text-5xl">¡Bienvenido a mi web, visitante! 🚀🌎 </div>
           <div className="text-3xl font-semibold">Software Dev. 🧑‍💻</div>
           <div className="flex gap-4">
             <Button text='🔗 Descargar CV' link='https://drive.google.com/uc?export=download&id=1Li9iiBbkWhfSoihZc30UHje5TdYNZbbc'></Button>
