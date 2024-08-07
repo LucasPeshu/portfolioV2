@@ -12,7 +12,7 @@ function AboutMe() {
               <img src={Foto} alt="" className="rounded-lg w-48"></img>
               <div className='text-center md:text-left'>
                 <div className="text-4xl text-sky-400 font-bold">¡Hola, soy Lucas! 🖖</div>
-                <div className="text-white text-3xl">Estoy emocionado de compartir mi trabajo contigo y espero que encuentres inspiración en mis proyectos. Si deseas colaborar, tienes alguna pregunta o simplemente quieres conectarte, no dudes en contactarme. ¡Gracias por visitar mi portafolio!</div>
+                <div className="text-white text-2xl">Soy un estudiante avanzado de la carrera de Ingeniería en Sistemas. Aquí encontrarás una muestra de mis proyectos. ¡Gracias por visitar y espero que disfruten explorando mi trabajo!</div>
               </div>
             </div>
           </div>
